@@ -10,7 +10,7 @@ Static Sites are returning and there are new technologies emerging with them. I 
 
 `Work in progress...`
 
-I smiled when I read the first chapter of a [blogpost](https://www.sitepoint.com/7-reasons-use-static-site-generator/) with the headline _What is a Static Site?_ I bet 30 years ago somewhere was a blogpost with the introduction question _What is a Dynamic Site?_. Sometimes we forget how it all started.
+I smiled when I read the first chapter of a [blogpost](https://www.sitepoint.com/7-reasons-use-static-site-generator/) with the headline _What is a Static Site?_ I bet 20 years ago somewhere was a blogpost with the introduction question _What is a Dynamic Site?_. Sometimes we forget how it all started.
 
 Like me maybe you have already heard of netlify, JAMStack, Gatsby, next.js or nuxt.js but could not really bring it into context with server side rendering and static site generators. I will try to bring these in order here.
 
