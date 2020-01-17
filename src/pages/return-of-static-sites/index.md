@@ -1,7 +1,7 @@
 ---
 title: The Static Site Awakens and Strikes Back
 date: "2020-01-17"
-featuredImage: "./jamstack.jpeg"
+featuredImage: "./strikesback.png"
 ---
 
 Static Sites are returning and there are new technologies emerging with them. I will introduce some of them here.
@@ -30,7 +30,7 @@ Server site rendering for React applications.
 
 Server site rendering for Vue.js applications. Obviously inspired by Next.js.
 
-# static site generators
+# [static site generators](https://www.keycdn.com/support/static-site-generator)
 
 The sites are prerendered during the build process.
 
@@ -54,7 +54,7 @@ The trend of static websites is accompanied by a stack acronym: JAM. Follow the 
 
 **M**ongoDB, **E**xpress.js, **A**ngular, **N**ode.js
 
-## JAM (ca. 2016)
+## [JAM](https://jamstack.org/) (ca. 2016)
 
 client-side **J**avaScript, reusable **A**PIs, **m**arkup
 
