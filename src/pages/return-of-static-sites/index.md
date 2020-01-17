@@ -66,7 +66,7 @@ The inventors of JAM. Support the hosting of your JAM-Stack based application ve
 
 One reason is of course the performance and better security of static websites about which has already been sufficiently written about. But another reason is the possibility to include the content providing non technical savy user.
 
-With version control and CI/CD Pipelines Software developers have sophisticated tools and processes for code maintenance and deployments. These tools were not used by non technical savy people who had to use Content Mangement Systems like Wordpress or Drupal to provide their content.
+With version control and CI/CD Pipelines Software developers have sophisticated tools and processes for code maintenance and deployments. These tools were not used by non technical savy people who had to use Content Mangement Systems like Wordpress, Joomla, Drupal or TYPO3 to provide their content.
 
 With easy to use tools and cloud based version control and CI/CD pipelines these users can now benefit from the same processes.
 

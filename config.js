@@ -1,7 +1,7 @@
 module.exports = {
     title: "Dev Blog", // Required
-    author: "Daniel Schmidt", // Required
-    description: "Full-stack Web Developer",
+    author: "Horazius", // Required
+    description: "Software development enthusiast",
     primaryColor: "#3498db", // Required
     showHeaderImage: true,
     showShareButtons: true,
