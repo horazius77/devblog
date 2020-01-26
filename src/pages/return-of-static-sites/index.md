@@ -1,11 +1,11 @@
 ---
 title: The Static Site Awakens and Strikes Back
-date: "2020-01-25"
+date: "2020-01-26"
 featuredImage: "./strikesback.png"
 ---
 
-Static webpages and websites are having a great comeback because of new tools and new services to build and host them.
-I will introduce some of them here.
+Static websites are having a great comeback because of new tools and new services to build and host them.
+I will explain the most important terms and introduce the so called Jamstack in this blogpost.
 
 <!-- end -->
 
@@ -46,8 +46,8 @@ SPA's built with Frameworks like React, Angular or Vue deliver only an index.htm
 The webpages are then rendered via direct DOM manipulation through JavaScript on the client.
 
 > SPAs manipulate the DOM directly via JavaScript.
-They use only one almost empty HTML file or [an application shell](https://developers.google.com/web/fundamentals/architecture/app-shell) as an anchor.
-Thus the name **S**ingle **P**age **A**pplications.
+> They use only one almost empty HTML file or [an application shell](https://developers.google.com/web/fundamentals/architecture/app-shell) as an anchor.
+> Thus the name **S**ingle **P**age **A**pplications.
 
 # <a name="ssr"></a>Server-Side Rendering
 
@@ -62,7 +62,7 @@ Frameworks like [Next.js](https://nextjs.org/) for React application and [Nuxt.j
 JavaScript based dynamic webpages can be problematic from a Search Engine Optimization (SEO) perspective, since not all webcrawlers will execute JavaScript properly and may therefore index only the not very meaningful application shell.
 
 > Although Googlebot is said to be able to render JavaScript since 2014, static webpages currently may still have an advantage concerning SEO.
-This may change with the development of more sophisticated webcrawlers.
+> This may change with the development of more sophisticated webcrawlers.
 
 In 2018 Google announced the concept of [Dynamic Rendering](https://developers.google.com/search/docs/guides/dynamic-rendering#implement).
 In short this means that dependent from the User Agent the web server delivers different versions of the website.
@@ -103,28 +103,25 @@ If server-side functions like data storage, computation, identity or commerce fu
 APIs can be consumed either at build time, or at runtime in the browser by client-side JavaScript.
 JavaScript can also be used for dynamic DOM generation or just for enhancing the user experience.
 
-# Jamstack and CMS `(Work in progress)`
+# Jamstack-based CMS
 
-One reason is of course the performance and better security of static websites about which has already been sufficiently written about.
-But another reason is the possibility to include the content providing non technical savy user.
+Content Management Systems (CMS) based on the Jamstack are becoming very popular.
+They already outperform traditional CMS like Wordpress, Joomla or TYPO3 in terms of flexibility, performance and security.
+Only in the area of usability for the non technical editor who provides content they still have to catch up.
 
-With version control and CI/CD Pipelines Software developers have sophisticated tools and processes for code maintenance and deployments.
-These tools were not used by non technical savy people who had to use Content Mangement Systems like Wordpress, Joomla, Drupal or TYPO3 to provide their content.
+With version control and CI/CD Pipelines software developers have sophisticated tools and processes for code maintenance and deployments.
+With **Git-based CMS** these battle-proven tools and processes conquer the world of Content Management Systems.
+A git-based CMS Solution uses a static site generator like GatsbyJS often together with a template to generate the static webpages, push them to a git repository and automatically deploy them to a CDN by a git based CI/CD pipeline.
 
-With easy to use tools and cloud based version control and CI/CD pipelines these users can now benefit from the same processes.
+This webblog is currently created this way, by using [DevBlog](https://ryanfitzgerald.github.io/devblog/), a blog template based on GatsbyJS and [netlify](https://netlify.com) as a CDN.
+Editors can create new blogposts via [StackEdit](https://stackedit.io/) and only need their own github account to deploy new markdown files as blogposts. To be honest, I am the only editor and use Visual Studio Code to provide content.
 
-## Git based CMS System
+The next evolution of Jamstack based CMS are **headless, API-first CMS**.
+These CMS offer a GUI for creating and managing the content.
+They do not care about the presentation of the content and therefore do not offer a WYSIWYG editor, but offer access to the content data via APIs. You can find an overview of headless Content Management Systems on [headlesscms.org](https://headlesscms.org/).
 
-Here is an example stack for a new kind of CMS System:
+The less ideal editing experience for the non-technical user due to the lack of WYSIWIG features leads to the current development in the field of **Jamstack-based CMS with on-page editing**.
+[TinaCMS](https://tinacms.org) is an open source project which adds editing functionality right into a Gatsby or Next.js site when run in developer mode locally.
+[Stackbit Live](https://www.stackbit.com/) is a CMS and SSG agnostic toolset, which also allows on-page editing and previewing of a Jamstack based site.
 
--   [DevBlog](https://ryanfitzgerald.github.io/devblog/) is a blog template based on GatsbyJS. Create your own branch in GitHub.
--   The application can then be hosted at netlify. Commits to the master branch will automatically deploy the site.
--   Content providing users can create new blogposts via [StackEdit](https://stackedit.io/). They need their own github account and can deploy new markdown files as blogposts to githubb
-    -   You can let the users push directly to master branch, or
-    -   you can of course use same rules as usual like no pushes to master branch without pull requests.
-
-## Headless CMS System `(Work in progress)`
-
-Netlify CMS is a so called headless CMS System.
-
-> How does it compare to git based CMS System above?
+> 34% of all websites on the internet are run with WordPress. Stand out from the crowd with a lightning fast website and go start migrating your website to the Jamstack. :D
